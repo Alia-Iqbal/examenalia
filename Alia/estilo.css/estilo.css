@@ -1,0 +1,240 @@
+:root{
+    --fondo: #9cdbff;
+    --fondoNAV: #5e9dc1;
+    --fondoHeader: #1046ea;
+    --anchoPag: 960px;
+    --fondoCaja: #ffffff;
+    --fondoResponsive:720px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: var(--fondo);
+}
+
+header{
+    background: var(--fondoHeader);
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+}
+
+.con-encabezado{
+    width: var(--anchoPag);
+    height: 150px; 
+    background: #0d0b90;  
+    margin: auto;
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.con-encabezado img{
+    width: 200px;
+    height: 140px; 
+    margin-top: 10px;   
+}
+
+.con-encabezado h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: #fff;  
+}
+
+.con-encabezado h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #d9ff00;
+}
+
+.con-nav{
+    display: flex;
+    margin: 0 auto;
+    width: var(--anchoPag);
+    background: var(--fondoNAV);
+    justify-content: center;
+    align-items: center;
+}
+
+.con-nav a{
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 17px;
+    color: #fff;
+    line-height: 35px;
+    border-right: solid blue 1px;
+    border-bottom: solid blue 1px;
+    border-radius: 0 10px 0 0;
+}
+
+.con-nav a:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+    background: #640d0d;
+    color: #eeff00;
+}
+
+.imagen{
+    display: flex;
+    width: var(--anchoPag);
+    margin: 45px auto;
+}
+
+.imagen img{
+    width: 100%; }
+
+.con-caja{
+    width: var(--anchoPag);
+    margin: 0 auto;
+    background-color: var(--fondo);
+    display: flex;    
+    justify-content: space-between;  
+    margin: 50px auto;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.con-caja img{
+    border-radius: 50%;
+}
+footer{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    background: var(--fondoHeader);
+    padding-top: 20px;
+}
+footer p{
+    text-align: center;
+}
+.cont-footer{
+    width: var(--anchoPag);
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+.mapa{
+    width: 50%;
+    height: 300px;
+}
+.lateral  {
+    width: 50%;
+    margin-left: 20px;
+}
+.elementos{
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    align-items: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.elementos:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+.tt-lateral{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+.pp-lateral{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+@media(max-width: 768px){
+    header{
+        padding-top: 0;
+    }
+
+    .con-encabezado{  
+        width: 100%;  
+        height: 100%;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+
+    .con-encabezado img{
+        width: 130px;
+        height: 100px; 
+        margin-top: 10px;   
+    }
+
+    .con-encabezado h1{
+        font-size: 20px;
+        text-align: center; 
+    }
+
+    .con-encabezado h2{
+        font-size: 10px;
+        text-align: center; 
+    }
+    .con-nav{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0px;
+        text-align: center;
+    }
+    .con-nav a {
+        font-size: 9px ;
+        width: 100%;
+    }
+    .con-nav a:hover{
+        transform: scale(1.0);
+    }
+    .imagen{
+        width: 100%;
+        height: 230px;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+
+    .con-caja{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hijos{
+        margin-bottom: 20px;
+    }
+
+.barra{
+    width: 100%;
+    height: 50px;
+    border-bottom: solid #0d0b90 2px;
+}
+.contenido, .cont-footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;   
+}
+.caja{
+    margin-bottom: 30px;
+}
+.mapa{
+    width: 90%;
+    height: 350px;
+}
+.lateral{
+    width: 90%;
+}
+
+}
